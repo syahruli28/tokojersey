@@ -22,11 +22,11 @@
     </section>
 
     {{-- BEST PRODUCT --}}
-    <section class="best-product mt-5 mb-5">
+    <section class="products mt-5 mb-5">
         <h3><strong>Best Products</strong></h3>
         <div class="row mt-4">
             @foreach ($products as $product)
-            <div class="col">
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
                       <img src="{{ url('assets/jersey') }}/{{ $product->gambar }}" alt="" class="img-fluid">
