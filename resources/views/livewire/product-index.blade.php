@@ -14,7 +14,7 @@
 
     <div class="row">
         <div class="col-md-9">
-            <h2>List <strong>Jersey</strong></h2>
+            <h2>{{ $title }}</h2>
         </div>
         <div class="col-md-3">
             <div class="input-group mb-3">
@@ -44,7 +44,9 @@
                       </div>
                       <div class="row mx-2">
                           <div class="col-md-12">
-                              <a href="#" class="btn btn-dark btn-block">Detail</a>
+                                <a href="#" class="btn btn-dark btn-block">
+                                    <i class="fas fa-eye"></i>Detail
+                                </a>
                           </div>
                       </div>
                     </div>
