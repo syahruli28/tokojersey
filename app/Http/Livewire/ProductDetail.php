@@ -83,6 +83,9 @@ class ProductDetail extends Component
             'total_harga' => $total_harga,
         ]);
 
+        // untuk update realtime setelah tombol pesan diklik maka notif keranjang akan diupdate
+        $this->emit('masukKeranjang'); // dilempar ke controller Navbar
+
         // flash message
         session()->flash('message', 'Sukses masuk ke keranjang');
         // hapus input form
