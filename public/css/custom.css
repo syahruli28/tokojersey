@@ -33,3 +33,10 @@ body{
     font-weight: bold;
     color: black;
 }
+
+/* gambar product di product detail */
+.gambar-product{
+    background-color: #f1f1f1;
+    border-width: 0;
+    border-radius: 20px;
+}

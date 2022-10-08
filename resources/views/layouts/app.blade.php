@@ -24,8 +24,10 @@
     <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
 
     {{-- pasang livewire --}}
-    @livewireStyles
-    @livewireScripts
+    {{-- @livewireStyles
+    @livewireScripts --}}
+    <livewire:styles/>
+    <livewire:scripts/>
 
 </head>
 <body>
