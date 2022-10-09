@@ -35,7 +35,7 @@
                 <ul class="navbar-nav ml-auto">
                     {{-- keranjang --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('keranjang') }}">
                             Keranjang <i class="fas fa-shopping-bag"></i>
                             @if ($jumlah_pesanan!==0) {{-- hanya tampilkan jika pesanan lebih dari 0 --}}
                                 <span class="badge badge-danger">{{$jumlah_pesanan}}</span>
