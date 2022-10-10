@@ -27,7 +27,13 @@
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="{{ route('products') }}">Semua liga</a>
                         </div>
-                      </li>
+                    </li>
+
+                    @if (Auth::user())
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('history') }}">History</a>
+                        </li>
+                    @endif
 
                 </ul>
 
