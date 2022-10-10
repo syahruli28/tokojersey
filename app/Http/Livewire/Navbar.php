@@ -31,6 +31,8 @@ class Navbar extends Component
             if ($pesanan) { // jika ada
                 // update variabel jumlah dengan banyaknya isi keranjang dari si user yang login
                 $this->jumlah = PesananDetail::where('pesanan_id', $pesanan->id)->count();
+            } else {
+                $this->jumlah = 0; // agar saat update realtime nilainya bisa 0
             }
         }
     }
